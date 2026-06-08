@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: transparent;
+}
+
+.hero {
+  background: linear-gradient(135deg, #5B2C8E 0%, #1A1A2E 50%, #00A19C 100%);
+  padding: 60px 40px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle-1 {
+  top: -50px;
+  right: -50px;
+  width: 200px;
+  height: 200px;
+  background: rgba(255,255,255,0.05);
+}
+
+.circle-2 {
+  bottom: -30px;
+  left: -30px;
+  width: 150px;
+  height: 150px;
+  background: rgba(255,184,28,0.1);
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #FFB81C;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 48px;
+  color: #FFFFFF;
+  font-weight: 800;
+  letter-spacing: -1px;
+  line-height: 1.1;
+  margin-bottom: 15px;
+}
+
+.desc {
+  font-size: 18px;
+  color: rgba(255,255,255,0.8);
+  margin-bottom: 30px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 14px 32px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 15px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.btn-gold {
+  background: #FFB81C;
+  color: #1A1A2E;
+  box-shadow: 0 4px 15px rgba(255,184,28,0.4);
+}
+
+.btn-gold:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(255,184,28,0.6);
+}
+
+.btn-outline {
+  background: transparent;
+  color: #FFFFFF;
+  border: 2px solid rgba(255,255,255,0.4);
+}
+
+.btn-outline:hover {
+  border-color: #FFB81C;
+  color: #FFB81C;
+  transform: translateY(-3px);
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.stat-num {
+  font-size: 28px;
+  font-weight: 800;
+  margin: 0;
+}
+
+.gold { color: #FFB81C; }
+.teal { color: #00A19C; }
+.white { color: #FFFFFF; }
+
+.stat-label {
+  font-size: 12px;
+  color: rgba(255,255,255,0.6);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0;
+}
+</style>
+</head>
+<body>
+<div class="hero">
+  <div class="circle circle-1"></div>
+  <div class="circle circle-2"></div>
+  <div class="content">
+    <p class="subtitle">PETRONAS Plant Manager Council</p>
+    <h1>PMC Digital Hub</h1>
+    <p class="desc">Streamlining PMC operations through digital excellence — from registration to final deck submission</p>
+    <div class="buttons">
+      <a href="#" class="btn btn-gold">📝 Register Now</a>
+      <a href="#" class="btn btn-outline">📄 Submit Final Deck</a>
+    </div>
+    <div class="stats">
+      <div class="stat">
+        <p class="stat-num gold">04</p>
+        <p class="stat-label">PMC Events</p>
+      </div>
+      <div class="stat">
+        <p class="stat-num teal">24</p>
+        <p class="stat-label">Papers Submitted</p>
+      </div>
+      <div class="stat">
+        <p class="stat-num white">6</p>
+        <p class="stat-label">Plants</p>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
